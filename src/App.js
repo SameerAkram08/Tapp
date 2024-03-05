@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { AiOutlineDelete, AiOutlineEdit } from 'react-icons/ai';
-import { BsCheckLg } from 'react-icons/bs';
+import { BsCheckLg, BsArrowUp, BsArrowDown } from 'react-icons/bs';
 
 function App() {
   const [allTodos, setAllTodos] = useState([]);
@@ -124,6 +124,7 @@ function App() {
 
     handleToDoDelete(index);
   };
+
   const handleUpdateClick = (index) => {
     if (allTodos[index]) {
       setUpdateIndex(index);
@@ -135,7 +136,24 @@ function App() {
       alert('Todo item not found. Please select an existing item to update.');
     }
   };
-  
+
+  const handleMoveUp = (index) => {
+    if (index > 0) {
+      let updatedTodos = [...allTodos];
+      [updatedTodos[index - 1], updatedTodos[index]] = [updatedTodos[index], updatedTodos[index - 1]];
+      setAllTodos(updatedTodos);
+      localStorage.setItem('todolist', JSON.stringify(updatedTodos));
+    }
+  };
+
+  const handleMoveDown = (index) => {
+    if (index < allTodos.length - 1) {
+      let updatedTodos = [...allTodos];
+      [updatedTodos[index], updatedTodos[index + 1]] = [updatedTodos[index + 1], updatedTodos[index]];
+      setAllTodos(updatedTodos);
+      localStorage.setItem('todolist', JSON.stringify(updatedTodos));
+    }
+  };
 
   return (
     <div className="App">
@@ -217,6 +235,16 @@ function App() {
                     <p>{item.description}</p>
                   </div>
                   <div className="todo-icons">
+                    <BsArrowUp
+                      title="Move Up"
+                      className="icon"
+                      onClick={() => handleMoveUp(index)}
+                    />
+                    <BsArrowDown
+                      title="Move Down"
+                      className="icon"
+                      onClick={() => handleMoveDown(index)}
+                    />
                     <BsCheckLg
                       title="Completed?"
                       className="check-icon"
@@ -243,6 +271,16 @@ function App() {
                     <p>{item.description}</p>
                   </div>
                   <div className="todo-icons">
+                    <BsArrowUp
+                      title="Move Up"
+                      className="icon"
+                      onClick={() => handleMoveUp(index)}
+                    />
+                    <BsArrowDown
+                      title="Move Down"
+                      className="icon"
+                      onClick={() => handleMoveDown(index)}
+                    />
                     <BsCheckLg
                       title="Completed?"
                       className="check-icon"
