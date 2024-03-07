@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.bg1 {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 36px;
+  color: #1c72b8;
+}
+
+.todo-wrapper {
+  background-color: #ffffff;
+  padding: 2%;
+  width: 80%;
+  height: 100%;
+  /* Change width to a fixed value */
+  margin: 3rem auto;
+  overflow: auto;
+  /* Remove max-height and overflow-y */
+  box-shadow: 0px 5px 7px #000000;
+}
+
+.todo-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  
+}
+
+.todo-input-item {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  outline: #1c72b8;
+}
+
+.todo-input-item label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.todo-input-item input {
+  border: 2px solid #1c72b8;
+  padding: 8px;
+  width: 250px;
+  
+}
+
+.todo-input-item input:focus {
+  outline: 2px solid rgb(0, 176, 230);
+}
+
+.primary-btn {
+  background-color: rgb(13, 131, 174);
+  color: rgb(255, 254, 254);
+  border-radius: 0px;
+  border: none;
+  margin-top: 25px;
+  padding: 10px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: rgb(9, 82, 209);
+}
+
+.btn-area {
+  margin-bottom: 10px;
+}
+
+.secondaryBtn {
+  background-color: rgb(71, 110, 99);
+  color: white;
+  border-radius: 0px;
+  border: none;
+  padding: 10px;
+  width: max-content;
+  cursor: pointer;
+}
+
+.btn-area .active {
+  background-color: rgb(13, 131, 174);
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center todo items horizontally */
+}
+
+.todo-list-item {
+  width: 80%;
+  /* Adjust width to a fixed value */
+  background-color: #1783db;
+  padding: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgb(0, 0, 0);
+}
+
+.todo-list-item h3 {
+  font-size: 25px;
+  color: rgb(2, 7, 114);
+  font-weight: bold;
+  margin: 0px;
+}
+
+.todo-list-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: rgb(255, 254, 254);
+}
+
+.todo-icons {
+  display: flex;
+}
+
+.icon,
+.check-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: red;
+}
+
+.check-icon {
+  color: rgb(100, 231, 215);
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.check-icon:hover {
+  color: rgb(10, 125, 102);
+}
+
+.todo-title{
+  font-family: 'Merriweather'; 
+  font-weight: bold;
+
+}

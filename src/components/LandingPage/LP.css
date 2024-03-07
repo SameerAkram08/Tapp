@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.bg2 {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x: hidden;
+}
+
+.text1 {
+  color: #1c72b8;
+  font-family: 'Merriweather';
+  font-weight: 600;
+  font-size: 60px;
+  padding: 0;
+  text-align: left;
+}
+
+.text2 {
+  color: #ffffff;
+  font-family: 'Merriweather';
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.para1 {
+  color: #eef4fa;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.text-data {
+  margin-left: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bton {
+  width: 100%;
+  margin-top: 160px;
+}
+
+.exp-btn {
+  height: 70px;
+  width: 70px;
+  font-size: small;
+  font-family: 'Jura';
+  background: transparent;
+  color: antiquewhite;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.exp-btn:hover {
+  background-color: antiquewhite;
+  color: #1c72b8;
+  font-weight: 1000;
+}
+
+.exp-btn span {
+  width: 100px;
+  height: 100%;
+}
+
+.cntr-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.midBtn {
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+.men-btn {
+  background: transparent;
+  border: none;
+  font-family: 'Jura';
+  color: aliceblue;
+}
+
+.men-btn span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.men-line {
+  font-size: xx-large;
+}
