@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'; // Import your CSS file for styling
+import './App.css'; 
 import LandingPage from './components/LandingPage/LandingPage';
 import Todo from './components/todo/Todo';
 
@@ -8,7 +8,7 @@ import { Element, scroller } from 'react-scroll';
 const App = () => {
   const scrollToTodo = () => {
     scroller.scrollTo('todo', {
-      duration: 10, // Adjust this value to control the scroll speed
+      duration: 10, 
       delay: 0,
       smooth: 'ease-in',
     });

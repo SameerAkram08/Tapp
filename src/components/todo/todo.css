@@ -24,10 +24,8 @@ h1 {
   padding: 2%;
   width: 80%;
   height: 100%;
-  /* Change width to a fixed value */
   margin: 3rem auto;
   overflow: auto;
-  /* Remove max-height and overflow-y */
   box-shadow: 0px 5px 7px #000000;
 }
 
@@ -102,12 +100,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Center todo items horizontally */
 }
 
 .todo-list-item {
   width: 80%;
-  /* Adjust width to a fixed value */
   background-color: #1783db;
   padding: 25px;
   padding-top: 10px;
